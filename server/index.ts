@@ -26,7 +26,7 @@ const httpServer = createServer(app);
 // Initialize Socket.io
 const io = new Server(httpServer, {
   cors: {
-    origin: '*', // you can restrict to your frontend URL here
+    origin: 'https://june-cohort-2yg5.vercel.app', // you can restrict to your frontend URL here
     methods: ['GET', 'POST']
   }
 });
