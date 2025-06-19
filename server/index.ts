@@ -3,9 +3,9 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
-import authRoutes from './routes/auth.js';
-import appointmentRoutes from './routes/appointments.js';
-import doctorRoutes from './routes/doctors.js';
+import authRoutes from './routes/auth.ts';
+import appointmentRoutes from './routes/appointments.ts';
+import doctorRoutes from './routes/doctors.ts';
 import mongoose from 'mongoose';
 
 dotenv.config();
