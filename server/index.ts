@@ -44,7 +44,13 @@ io.on('connection', (socket) => {
 });
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: ['https://june-cohort-2yg5.vercel.app/'],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // Routes
