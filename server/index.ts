@@ -46,7 +46,7 @@ io.on('connection', (socket) => {
 // Middleware
 app.use(
   cors({
-    origin: ['https://june-cohort-2yg5.vercel.app/'],
+    origin: ['https://june-cohort-2yg5.vercel.app'],
     credentials: true,
   })
 );
